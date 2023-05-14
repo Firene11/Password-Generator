@@ -1,6 +1,13 @@
 // Assignment Code
 
-var askLength = prompt("How many characters would you like your password to be?")
+var pwLength = Number(prompt("How many characters would you like your password to be?"));
+
+while (pwLength < 8 || pwLength > 128) { 
+  var pwLength = Number(prompt("Password length must be at least 8 - 128 characters. How many characters would you like your password to be?"));
+}
+
+
+
 var allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
 var passwordMin = 8;
 var passwordMax = 120;

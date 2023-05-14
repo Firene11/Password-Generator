@@ -10,7 +10,7 @@ while (pwLength < 8 || pwLength > 128 || isNaN(pwLength)) {
   var pwLength = Number(prompt("Password length must be at least 8 - 128 characters. How many characters would you like your password to be?"));
 }
 // Confirm password length
-alert(`Your password will have ${pwLength} characters`);
+alert("Your password will have " + (pwLength) + "characters. ");
 
 // Output of Confirm buttons on rest of requirement questions
 var confirmLowerCase = confirm("Do you want to include lowercase letters? ");
@@ -73,19 +73,16 @@ if (confirmSpecialChar) {
 }
 console.log(ifChosen);
 
+var crazyPassword = [];
 
-
-return password
+for (var i = 0; i <= pwLength; i++) {
+  var crazyPassword = Math.floor(Math.random() * pwLength.length);
+  console.log(crazyPassword);
 }
 
 
-//WHEN all prompts are answered
-//THEN a password is generated that matches the selected criteria
-
-//WHEN the password is generated
-//THEN the password is either displayed in an alert or written to the page
-
-
+return crazyPassword
+}
 
 var generateBtn = document.querySelector("#generate");
 

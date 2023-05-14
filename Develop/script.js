@@ -12,11 +12,27 @@ while (pwLength < 8 || pwLength > 128 || isNaN(pwLength)) {
 // Confirm password length
 alert(`Your password will have ${pwLength} characters`);
 
+// Output of Confirm buttons on rest of requirement questions
 var confirmLowerCase = confirm("Do you want to include lowercase letters? ");
+if (confirmLowerCase) {
+  alert("You chose lowercase letters.");
+} else { 
+  alert("You DID NOT choose lower case letters.")
+}
+
 var confirmUpperCase = confirm("Do you want to include UPPERCASE letters?");
 var confirmNumbers = confirm("Do you want to include numbers?");
 var confirmSpecialChar = confirm("Do you want to include special characters?");
 
+
+//message if not at least one of the requirement questions is met.
+while (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpecialChar) {
+  alert("You must select at least one character type!");
+  confirmLowerCase = confirm("Do you want to include lowercase letters? ");
+  confirmUpperCase = confirm("Do you want to include UPPERCASE letters?");
+  confirmNumbers = confirm("Do you want to include numbers?");
+  confirmSpecialChar = confirm("Do you want to include special characters?");
+}
 
 var lowerCase = ["abcdefghijklmnopqrstuvwxyz", true]
 var allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789@#$";

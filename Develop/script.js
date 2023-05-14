@@ -73,6 +73,8 @@ if (confirmSpecialChar) {
 }
 console.log(ifChosen);
 
+
+
 return password
 }
 

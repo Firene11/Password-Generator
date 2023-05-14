@@ -1,13 +1,25 @@
 // Assignment Code
 
 function generatePassword() {
-  var passwordLength = prompt("How many characters would you like your password to be?")
+  var askLength = prompt("How many characters would you like your password to be?")
+  var allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
+  var passwordMin = 8;
+  var passwordMax = 120;
+  var password = " ";
+
+  if (passwordMin < 8 || > 120) {
+    prompt("Password must be between 8 and 120 characeters");
+  } 
+
+  for (let i = 1; i <= 8; i++) {
+    var char = Math.floor(Math.random()
+                * allCharacters.length + 1);
+      
+    password += allCharacters.charAt(char)
+}
 
   console.log("Does this button work?")
   
-
-//WHEN I click the button to generate a password
-//THEN I am presented with a series of prompts for password criteria
 
 
 //WHEN prompted for the length of the password
@@ -25,7 +37,7 @@ function generatePassword() {
 //WHEN the password is generated
 //THEN the password is either displayed in an alert or written to the page
 
-  return "God Help me"
+  return password 
 }
 
 var generateBtn = document.querySelector("#generate");

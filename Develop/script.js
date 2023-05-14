@@ -1,7 +1,7 @@
 // Assignment Code
 
 function generatePassword() {
-  
+
 // Prompt user to choose a number
   var pwLength = Number(prompt("How many characters would you like your password to be?"));
 
@@ -12,8 +12,10 @@ while (pwLength < 8 || pwLength > 128 || isNaN(pwLength)) {
 // Confirm password length
 alert(`Your password will have ${pwLength} characters`);
 
-var confirmLowerCase = confirm("Would you like to use lowercase letters?");
-var confirmUpperCase = confirm("Would you like to use uppercase letters?");
+var confirmLowerCase = confirm("Do you want to include lowercase letters? ");
+var confirmUpperCase = confirm("Do you want to include UPPERCASE letters?");
+var confirmNumbers = confirm("Do you want to include numbers?");
+var confirmSpecialChar = confirm("Do you want to include special characters?");
 
 
 var lowerCase = ["abcdefghijklmnopqrstuvwxyz", true]
@@ -26,8 +28,6 @@ var password = " ";
   
   return password
 }
-
-//THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
 
 //WHEN I answer each prompt
 //THEN my input should be validated and at least one character type should be selected

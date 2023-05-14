@@ -1,5 +1,5 @@
 // Assignment Code
-
+function generatePassword() {
 var pwLength = Number(prompt("How many characters would you like your password to be?"));
 
 while (pwLength < 8 || pwLength > 128) { 
@@ -13,7 +13,7 @@ var passwordMin = 8;
 var passwordMax = 120;
 var password = " ";
 
-function generatePassword() {
+
 
 
   console.log("Does this button work?")

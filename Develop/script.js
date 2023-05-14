@@ -1,31 +1,32 @@
 // Assignment Code
-function generatePassword() {
-var pwLength = Number(prompt("How many characters would you like your password to be?"));
 
-while (pwLength < 8 || pwLength > 128) { 
+function generatePassword() {
+  
+// Prompt user to choose a number
+  var pwLength = Number(prompt("How many characters would you like your password to be?"));
+
+// Creates a loop for number length requirement
+while (pwLength < 8 || pwLength > 128 || isNaN(pwLength)) { 
   var pwLength = Number(prompt("Password length must be at least 8 - 128 characters. How many characters would you like your password to be?"));
 }
+// Confirm password length
+alert(`Your password will have ${pwLength} characters`);
+
+var confirmLowerCase = confirm("Would you like to use lowercase letters?");
+var confirmUpperCase = confirm("Would you like to use uppercase letters?");
 
 
-
-var allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
+var lowerCase = ["abcdefghijklmnopqrstuvwxyz", true]
+var allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789@#$";
 var passwordMin = 8;
 var passwordMax = 120;
 var password = " ";
 
-
-
-
   console.log("Does this button work?")
   
-  return password 
+  return password
 }
 
-
-//WHEN prompted for the length of the password
-//THEN I choose a length of at least 8 characters and no more than 128 characters
-
-//WHEN asked for character types to include in the password
 //THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
 
 //WHEN I answer each prompt

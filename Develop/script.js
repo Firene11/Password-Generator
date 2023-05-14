@@ -51,12 +51,29 @@ while (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpec
 
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var numbers = 1, 2, 3, 4, 5, 6, 7, 8, 9, 0;
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var specialChar = ["!", "@", "#", "$", "%", "&", "*", "-", "_"];
-var password = " ";
 
+var ifChosen = " ";
+      
+if (confirmLowerCase) {
+  ifChosen = ifChosen.concat(lowerCase)
+}
+
+if (confirmUpperCase) {
+  ifChosen = ifChosen.concat(upperCase)
+}
+
+if (confirmNumbers) {
+  ifChosen = ifChosen.concat(numbers)
+}
   
-  return password
+if (confirmSpecialChar) {
+  ifChosen = ifChosen.concat(specialChar)
+}
+console.log(ifChosen);
+
+return password
 }
 
 

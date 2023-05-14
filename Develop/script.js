@@ -1,6 +1,9 @@
 // Assignment Code
 
-function generatePassword();
+function generatePassword() {
+  console.log("Does this button work?")
+  return "God Help me"
+}
 
 var generateBtn = document.querySelector("#generate");
 

@@ -21,9 +21,24 @@ if (confirmLowerCase) {
 }
 
 var confirmUpperCase = confirm("Do you want to include UPPERCASE letters?");
-var confirmNumbers = confirm("Do you want to include numbers?");
-var confirmSpecialChar = confirm("Do you want to include special characters?");
+if (confirmUpperCase) {
+  alert("You chose UPPERCASE letters.");
+} else { 
+  alert("You DID NOT choose UPPER case letters.")
+}
 
+var confirmNumbers = confirm("Do you want to include numbers?");
+if (confirmNumbers) {
+  alert("You chose numbers.");
+} else { 
+  alert("You DID NOT choose numbers.")
+}
+var confirmSpecialChar = confirm("Do you want to include special characters?");
+if (confirmSpecialChar) {
+  alert("You chose special characters.");
+} else { 
+  alert("You DID NOT choose special characters.")
+}
 
 //message if not at least one of the requirement questions is met.
 while (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSpecialChar) {

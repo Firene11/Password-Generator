@@ -9,7 +9,7 @@ N/A
 ## Usage
 To use this Password Generator, you click the button to generate a password. The you are prompted for password criteria - length of the password, and character types to include. Then a password is generated that matches the selected criteria and displayed on the page
 
-Link to page here
+https://firene11.github.io/Password-Generator/
 
 ## Screenshot
 

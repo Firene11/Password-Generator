@@ -12,7 +12,8 @@ To use this Password Generator, you click the button to generate a password. The
 Link to page here
 
 ## Screenshot
-03-Screenshot.jpg
+
+(03-Screenshot.jpg?raw=true "Screenshot")
 
 Credits
 N/A

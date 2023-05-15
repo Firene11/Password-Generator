@@ -73,14 +73,15 @@ if (confirmSpecialChar) {
 }
 console.log(ifChosen);
 
-var genPassword = [];
+var finalPass = " ";
 
-
-for (var i = 0; i <= pwLength; i++) {
-  genPassword = ifChosen[Math.floor(Math.random() * ifChosen.length)];
-  console.log(genPassword);
+for (var i = 0; i < pwLength; i++) {
+  var randomGen =[Math.floor(Math.random() * ifChosen.length)];
+  finalPass = finalPass + ifChosen[randomGen];
 }
-return genPassword;
+
+return finalPass; 
+
 }
 
 var generateBtn = document.querySelector("#generate");

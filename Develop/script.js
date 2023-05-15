@@ -75,13 +75,13 @@ console.log(ifChosen);
 
 var finalPass = " ";
 
+// randomGen contains the random chosen characters by the user's chosen length of password
 for (var i = 0; i < pwLength; i++) {
   var randomGen =[Math.floor(Math.random() * ifChosen.length)];
+//define the final password by joining it with the user's character type choices by random math variable.
   finalPass = finalPass + ifChosen[randomGen];
 }
-
 return finalPass; 
-
 }
 
 var generateBtn = document.querySelector("#generate");

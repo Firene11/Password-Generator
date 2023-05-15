@@ -3,11 +3,11 @@
 function generatePassword() {
 
 // Prompt user to choose a number
-  var pwLength = prompt("How many characters would you like your password to be?");
+  var pwLength = Number(prompt("How many characters would you like your password to be?"));
 
 // Creates a loop for number length requirement
-while (pwLength < 8 || pwLength > 128) { 
-  var pwLength = prompt("Password length must be at least 8 - 128 characters. How many characters would you like your password to be?");
+while (pwLength < 8 || pwLength > 128 || isNaN(pwLength)) { 
+  var pwLength = (prompt("Password length must be at least 8 - 128 characters. How many characters would you like your password to be?"));
 }
 
 // Confirm password length
@@ -78,7 +78,7 @@ var finalPass = " ";
 // randomGen contains the random chosen characters by the user's chosen length of password
 for (var i = 0; i < pwLength; i++) {
   var randomGen =[Math.floor(Math.random() * ifChosen.length)];
-//define the final password by joining it with the user's character type choices by random math variable.
+//define the final password by joining it with the user's character type choices with random math equation.
   finalPass = finalPass + ifChosen[randomGen];
 }
 return finalPass; 

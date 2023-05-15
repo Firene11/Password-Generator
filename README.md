@@ -13,7 +13,7 @@ Link to page here
 
 ## Screenshot
 
-03-Screenshot.jpg
+[03-Screenshot.jpg](https://github.com/Firene11/Password-Generator/blob/main/03-Screenshot.jpg?raw=true)
 
 ## Credits
 N/A

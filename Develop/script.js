@@ -89,6 +89,7 @@ for (var i = 0; i < pwLength; i++) {
 }
 // Displays the final randomly generated password!
 return finalPass; 
+console.log(finalPass);
 }
 
 var generateBtn = document.querySelector("#generate");

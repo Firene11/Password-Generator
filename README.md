@@ -12,7 +12,7 @@ To use this Password Generator, you click the button to generate a password. The
 Link to page here
 
 ## Screenshot
-image
+03-Screenshot.jpg
 
 Credits
 N/A

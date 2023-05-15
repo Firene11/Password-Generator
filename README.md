@@ -15,8 +15,8 @@ Link to page here
 
 03-Screenshot.jpg
 
-Credits
+## Credits
 N/A
 
-License
+## License
 Please refer to the LICENSE in the repo.

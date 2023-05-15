@@ -84,7 +84,7 @@ var finalPass = " ";
 // randomGen contains the random chosen characters by the user's chosen length of password
 for (var i = 0; i < pwLength; i++) {
   var randomGen =[Math.floor(Math.random() * ifChosen.length)];
-// Defines the final password by joining it with the user's character type choices with random math equation.
+// Defines the final password by joining it with the user's character type choices and converting it all into a string.
   finalPass = finalPass + ifChosen[randomGen];
 }
 // Displays the final randomly generated password!

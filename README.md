@@ -13,7 +13,7 @@ Link to page here
 
 ## Screenshot
 
-(03-Screenshot.jpg?raw=true "Screenshot")
+03-Screenshot.jpg
 
 Credits
 N/A
